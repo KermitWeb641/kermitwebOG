@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kermit Web 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM12 21.75a.75.75 0 01-.75-.75v-2.25a.75.75 0 011.5 0V21a.75.75 0 01-.75.75zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM21 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25A.75.75 0 0121 12zM5.13 5.13a.75.75 0 011.06 0L7.81 6.75a.75.75 0 01-1.06 1.06L5.13 6.19a.75.75 0 010-1.06zM18.87 18.87a.75.75 0 01-1.06 0l-1.62-1.62a.75.75 0 011.06-1.06l1.62 1.62a.75.75 0 010 1.06zM18.87 5.13a.75.75 0 010 1.06l-1.62 1.62a.75.75 0 11-1.06-1.06l1.62-1.62a.75.75 0 011.06 0zM5.13 18.87a.75.75 0 010-1.06l1.62-1.62a.75.75 0 111.06 1.06l-1.62 1.62a.75.75 0 01-1.06 0z"/>
+    </svg>
+  </button>
+  <div class="spotify-menu-trigger">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="Spotify">
+  </div>
+  <div class="spotify-menu">
+    <div class="spotify-menu-content">
+      <input type="url" class="spotify-url-input" placeholder="Enter Spotify URL" required>
+      <button class="spotify-embed-button">Embed Spotify</button>
+      <div class="spotify-container"></div>
+    </div>
+  </div>
+  <div class="youtube-menu-trigger">
+    <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube">
+  </div>
+  <div class="youtube-menu">
+    <div class="youtube-menu-content">
+      <input type="url" class="youtube-url-input" placeholder="Enter YouTube URL" required>
+      <button class="youtube-embed-button">Embed YouTube</button>
+      <div class="youtube-container"></div>
+    </div>
+  </div>
+  <div class="chrome-apps-menu-trigger">
+    <img src="https://cdn-icons-png.flaticon.com/512/8377/8377243.png" alt="Chrome Apps">
+  </div>
+  <div class="chrome-apps-menu">
+    <div class="chrome-apps-menu-content">
+      <h2>Themes</h2>
+      <input type="url" class="theme-url-input" placeholder="Image URL for Background" required>
+      <button class="theme-apply-button">Apply Background</button>
+    </div>
+  </div>
+  <button class="secret-button-trigger"></button>
+  <div class="secret-menu">
+    <div class="secret-menu-content">
+      <h2>Kermit</h2>
+      <img src="https://cdn.leonardo.ai/users/b9cc29a6-5473-4a1c-8dd1-eea1e8839c96/generations/490fa279-46f2-4f47-aa13-1ef2b7ae43a1/Leonardo_Anime_XL_Digital_illustration_in_a_vibrant_animeinspi_3.jpg" alt="Kermit" style="width: 100%; border-radius: 10px; margin-top: 10px;">
+      <p style="text-align: center; margin-top: 10px;">Kermit, the proud founder of Kermit Web and Kermit Web Gaming</p>
+    </div>
+  </div>
+  <div class="background">
+    <svg width="100%" height="100%" preserveAspectRatio="none">
+      <defs>
+      </defs>
+      <rect width="100%" height="100%" fill="#111111" /> 
+      <g class="bubbles"></g> 
+      <g class="snowflakes"></g>
+    </svg>
+  </div>
+  <div class="container">
+    <h1 class="title">Kermit Web</h1>
+    <input type="url" class="url-input" placeholder="Enter URL" required>
+    <button class="open-button">Open in about:blank</button>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search with Bing..." required>
+      <button class="search-button">Search</button>
+    </div>
+    <div class="button-group">
+      <button class="links-button">Links</button>
+      <button class="chat-room-button">Chat Room</button>
+      <button class="games-button">Games</button>
+      <button class="ai-art-button">AI Art</button>
+      <button class="cloak-button">Cloak</button>
+    </div>
+    <button class="guide-button">Guide</button>
+    <p class="disclaimer">Note: Not all links are compatible</p>
+    <div class="ai-chat-container">
+      <label for="ai-personality">AI Personality:</label>
+      <select id="ai-personality">
+        <option value="You are a friendly assistant.">Friendly</option>
+        <option value="You are a grumpy old man.">Grumpy</option>
+        <option value="You are a pirate.">Pirate</option>
+      </select>
+      <div class="ai-chat-display"></div>
+      <div class="ai-chat-input-area">
+        <input type="text" class="ai-chat-input" placeholder="Type your message...">
+        <button class="ai-chat-send-button">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="visitor-counter">
+    <a href='http://www.freevisitorcounters.com'>freevisitorcounters.com</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7fb4c3d8a830bb7962d76c636641a3b6fdf661d1'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1277580/t/6"></script>
+  </div>
+  <div id="popup-blocked-message" class="popup-blocked-message">
+    <p>Please allow popups for this site to automatically open the cloak.</p>
+    <button onclick="document.getElementById('popup-blocked-message').classList.remove('show')">Dismiss</button>
+  </div>
+  <div class="retro-clock">
+    <span class="time hours">00</span>:<span class="time minutes">00</span>:<span class="time seconds">00</span>
+  </div>
+  <script src="animation.js"></script>
+  <script src="clock.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeApplyButton = document.querySelector('.theme-apply-button');
+      const themeUrlInput = document.querySelector('.theme-url-input');
+      const backgroundSVG = document.querySelector('.background svg');
+      const body = document.body;
+
+      // Load saved background if available
+      const savedBackground = localStorage.getItem('customBackground');
+      if (savedBackground) {
+        body.style.backgroundImage = `url('${savedBackground}')`;
+        body.style.backgroundSize = 'cover';
+        body.style.backgroundRepeat = 'no-repeat';
+        backgroundSVG.style.display = 'none'; // Hide SVG background
+      }
+
+      themeApplyButton.addEventListener('click', () => {
+        const imageUrl = themeUrlInput.value;
+        if (imageUrl) {
+          body.style.backgroundImage = `url('${imageUrl}')`;
+          body.style.backgroundSize = 'cover';
+          body.style.backgroundRepeat = 'no-repeat';
+          backgroundSVG.style.display = 'none'; // Hide SVG background
+          localStorage.setItem('customBackground', imageUrl); // Save to localStorage
+          themeUrlInput.value = ''; // Clear input after applying
+        }
+      });
+    });
+  </script>
+  <script>
+    const personalitySelect = document.getElementById('ai-personality');
+    personalitySelect.addEventListener('change', (e) => {
+      aiPersonality = e.target.value;
+    });
+  </script>
+</body>
+</html>
